@@ -4,35 +4,68 @@
     <meta charset="UTF-8">
     <title>Maket</title>
     <link type="text/css"  rel="stylesheet" href="Maket.css">
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="wrapper">
-    <header class="header1 container">
-        <div class="header1_Dudeshape">
-            <a class="header1_Dudeshape_a" href="/">Dudeshape</a>
-        </div> 
-
-    <nav class="header1_menu">
-        <ul class="header1_menu_ul">
-            <li class="header1_menu_li"><a href="#Home">Home</a></li>  
-            <li class="header1_menu_li"><a href="#Products">Products</a></li>
-            <li class="header1_menu_li">About Us</li>
-            <li class="header1_menu_li"><a href="#Contact">Contact Us</a></li>
+    <header class="header">
+       <div class="header_container">
+            <a class="header_logo" href="/">Dudeshape</a>
+ 
+    <nav class="header_menu menu">
+        <ul class="menu_list">
+            <li class="menu_item"><a href="#Home" class="menu_link">Home</a></li>  
+            <li class="menu_item"><a href="#Products" class="menu_link">Products</a></li>
+            <li class="menu_item"><a href="#About Us" class="menu_link">About Us</a></li>
+            <li class="menu_item"><a href="#Contact" class="menu_link">Contact Us</a></li>
          </ul>
     </nav> 
 
         <div class="header_action">
-            <button class="header_action_button"><img src="foto/Profile.png" alt="профиль" width="24px" height="24px"></button>
-            <button class="header_action_button"><img src="foto/Buy.png" alt="корзина" width="24px" height="24px"></button>
-            <button class="header_action_button"><img src="foto/Frame.png" alt="frame" width="24px" height="24px"></button>
+            <button class=" button button_header"><img src="foto/Profile.png" alt="профиль" ></button>
+            <button class="button button_header"><img src="foto/Buy.png" alt="корзина"></button>
+            <button class="button button_header"><img src="foto/Frame.png" alt="frame" ></button>
+        </div>
         </div>
     </header>
 
-    <main>
-    <section id="Home" class="section1 container_Home">
+    <main class="main">
+        <section class="Home">
+<div class="Home_container">
+    <div class="Home_content">
+        <div class="Home_blok-text blok-text">
+            <h1 class="blok-text_title">Get Your Best Cosmetic
+                Products Here</h1>
+            <div class="blok-text_text">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy
+            </div>
+            <form class="search">
+                <input class="search_input" type="search" name="search" placeholder="Search..."> 
+                <button class="search_button" type="submit">  
+                      
+            </button> 
+            </form>
+            <div>
+            <a href="" class="blok-text_button_ShopNow button_ShopNow_input button">Shop Now</a>
+            </div>    
+        </div>
+    </div>
+    <div class="Home_image">
+        <img src="foto/PSDNukJan_(12) 1.png" alt="PSDNukJan_(12)"> 
+    </div>
+    <div class="arrow">
+        <i class="fa fa-angle-left arrow_prev"></i>
+        <i class="fa fa-angle-right arrow_next"></i>
+        </div>     
+</div>
+        </section>
+
+    <!--<section id="Home" class="section1 container_Home">
         <h1 class="h1_Home"> Get Your Best Cosmetic
              Products Here</h1>
         <p class="p_Home">
@@ -47,12 +80,12 @@
             
      </form>
 
-     <form class="ShopNow">
-        <input class="ShopNow_input" type="submit" value="Shop Now">  
+     <form class="button_ShopNow">
+        <input class="button_ShopNow_input" type="submit" value="Shop Now">  
      </form>
 
      <div class="img">
-        <img src="foto/PSDNukJan_(12) 1.png" alt="foto1" width="796px" height="609px">
+        <img src="foto/PSDNukJan_(12) 1.png" alt="foto1" >
     </div>
      <div class="arrow">
         <i class="arrow_prev"></i>
@@ -67,7 +100,7 @@
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
          Lorem Ipsum has been the industry's standard dummy
     </p>
-    </section>
+    </section> -->
 
     <!--<h1>The Perfect Beauty Of You</h1>
     <p>
@@ -107,6 +140,9 @@
 
     </p> -->
 </main>
+<footer class="footer">
+    Footer
+</footer>
 </div> 
 </body>
 </html>
