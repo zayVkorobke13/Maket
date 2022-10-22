@@ -1,6 +1,7 @@
 
 body{
-  font-family:'Red+Hat+Display';
+  font-family: 'Red Hat Display';
+  font-style: normal;
   font-size: 20px;
   color: #555555;
   height: 100%;
@@ -86,7 +87,6 @@ color: #222222;
       }
       }
 .menu_link {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
@@ -98,8 +98,6 @@ color: #222222;
     }
 .header_action {
 }
-.button {
-}
 .button_header{
   border: none;
   background-color: transparent;
@@ -108,25 +106,7 @@ color: #222222;
   width: 24px;
   height: 24px;
 }
-.button_ShopNow_input{
-  display: inline-block;
-  font-family:'Red+Hat+Display';
-  text-transform: capitalize;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 133%; /*межстрочный интервал расчет в % 24px/18*/
-  letter-spacing: 0.5px;
-  color: #FFFFFF;
-  padding: 16px 32px;
-  background: #402F2C;
-  transition: background-color 0.5s ease 0s; /*определение скорости(плавности) изменения цвета кнопки*/
-  margin-bottom: 20px;
-}
-/*кнопка меняет цвет при наведении*/
-.button_ShopNow_input:hover{
-  background-color: #8bcfd1;
-}
-/*==============================================================================================*/
+/*=======Home=======================================================================================*/
 .Home {
   margin: 70px 0px 0px 0px;
 }
@@ -136,11 +116,11 @@ color: #222222;
   flex-wrap: wrap;
   padding-top: 108px;
   background: #F9F6F5; 
-}
-
+} 
 .Home_content {
   /*display: flex;
   flex: 0 1 content;*/
+  margin-bottom: 20px;
 }
 .Home_blok-text {
   position: relative;
@@ -156,16 +136,20 @@ color: #222222;
   font-size: 56px;
   line-height: 125%;
   color: #000000;
+}
+.blok-text_title_Cosmetic_products{
   max-width: 621px;
   margin-bottom:30px;
 }
+.blok-text_text_Cosmetic_products{
+  max-width: 516px;
+  margin-bottom:30px;
+}
 .blok-text_text {
-font-weight: 400;
-font-size: 20px;
-line-height: 160%;
-color: #555555;
-max-width: 516px;
-margin-bottom:30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: #555555;
 }
 .search{
   border: none;
@@ -203,10 +187,27 @@ margin-bottom:30px;
   height: 16px;
 }
 .blok-text_button_ShopNow {
-}
-.button_ShopNow_input {
+  background: #402F2C;
+  color: #FFFFFF;
 }
 .button {
+}
+.button_ShopNow_input{
+  display: inline-block;
+  font-family: 'Red Hat Display';
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%; /*межстрочный интервал расчет в % 24px/18*/
+  letter-spacing: 0.5px;
+  
+  padding: 16px 32px;
+  
+  transition: background-color 0.5s ease 0s; /*определение скорости(плавности) изменения цвета кнопки*/
+}
+/*кнопка меняет цвет при наведении*/
+.button_ShopNow_input:hover{
+  background-color: #8bcfd1;
 }
 .Home_image {
 }
@@ -263,7 +264,82 @@ hr{
   margin-right: 0px;
 }
 
-/*============================================================================*/
+/*============Our Porular Product==========================================================*/
+.BuyNow_container {
+  margin-bottom: 60px;
+}
+.BuyNow_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.BuyNow_blok-text {
+  max-width: 714px;
+}
+.blok-text {
+}
+.blok-text_title {
+}
+.blok-text_text {
+}
+.BuyNow_link{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125%;
+  text-decoration-line: underline;
+  color: #222222;
+}
+.blok-text_title_BuyNow{
+  max-width: 347px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 150%;
+  margin: 0;
+}
+.blok-text_text_BuyNow_ToCart{
+  max-width: 516px;
+}
+
+.BuyNow_ToCart_container{
+display: flex;
+justify-content: space-between;
+
+  
+}
+.BuyNow_Cosmetic_products_blok1{
+  margin-right: 40px;  
+  border: 1px solid rgba(104, 90, 82, 0.19);
+}
+.BuyNow_Cosmetic_products_blok2{
+  border: 1px solid rgba(104, 90, 82, 0.19);
+}
+.BuyNow_ToCart_blok-text{
+padding-left: 32px;
+}
+.BuyNow_img img{
+  
+}
+
+.BuyNow_ToCart{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 48px 32px 32px 32px;
+  
+}
+.button_BuyNow_ToCart{
+ 
+}
+.text__BuyNow_ToCart{
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 107px;
+  text-align: right;
+  color: #222222;
+}
+
+/*=========experts===================================================================*/
 .experts {
   
 }
@@ -271,12 +347,11 @@ hr{
   padding: 130px 0px 130px 0px;
 }
 .experts_statistics {
+ 
 }
 .statistics-experts {
   margin: 0 auto;
   background-color: #FDF8F5;
-  
-
 }
 .statistics-experts_body {
 }
@@ -290,23 +365,62 @@ hr{
 .body-statistics-experts_item {
 }
 .body-statistics-experts_value {
-  font-style: normal;
   font-weight: 700;
   font-size: 56px;
-  line-height: 70px;
+  line-height: 125%;
   color: #222222;
-  text-decoration: underline;
-  padding-bottom: 4px;
   border-bottom: 3px solid #222222;
 }
 .body-statistics-experts_text {
-  font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 125%;
   color: #555555;
+  padding-top: 30px;
 }
 .statistics-experts_decor {
 }
 .statistics-experts_decor_1 {
+}
+/*=========experts_body===============================================*/
+.experts_body_container{
+  
+}
+.experts_body {
+  display: flex;
+  align-items: center;
+  
+}
+.experts_content {
+  flex: 0 1 52%;   
+}
+.experts_block-text {
+    
+}
+.block-text {
+  
+}
+.experts_blok-text_title{
+  max-width: 520px;
+  margin-bottom: 20px;
+}
+.blok-text_title {
+}
+.blok-text_text {
+}
+.experts_blok-text_text{
+  max-width: 608px;
+  margin-bottom: 50px;
+ 
+}
+.blok-text_button_ToCart{
+  color: #402F2C;
+  border: 1px solid rgba(104, 90, 82, 0.46);
+}
+.button_ShopNow_input {
+}
+.button {
+}
+.experts_img img{
+  flex: 0 1 48%;
 }
